@@ -1,0 +1,22 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+             http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <!-- Servlet Configuration -->
+    <servlet>
+        <servlet-name>CourseServlet</servlet-name>
+        <servlet-class>com.universityportal.CourseServlet</servlet-class>
+    </servlet>
+
+    <!-- URL Mapping for CourseServlet -->
+    <servlet-mapping>
+        <servlet-name>CourseServlet</servlet-name>
+        <url-pattern></url-pattern>
+        <url-pattern>/course/create</url-pattern>
+        <url-pattern>/course/edit</url-pattern>
+        <url-pattern>/course/update</url-pattern>
+    </servlet-mapping>
+
+</web-app>
